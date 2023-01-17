@@ -1,10 +1,24 @@
 'use strict';
 
-function titleClickHandler(){
-  const links = document.querySelectorAll('.titles a');
-  console.log(links);
+function titleClickHandler(event){
+  console.log('Link was clicked!');
+  console.log (event)
+
+  /* remove class 'active' from all article links  */
+
+  /* add class 'active' to the clicked link */
+
+  /* remove class 'active' from all articles */
+
+  /* get 'href' attribute from the clicked link */
+
+  /* find the correct article using the selector (value of 'href' attribute) */
+
+  /* add class 'active' to the correct article */
 }
 
-const buttonTest = document.getElementById('button-test');
+const links = document.querySelectorAll('.titles a');
 
-buttonTest.addEventListener('click', titleClickHandler);
+for(let link of links){
+  link.addEventListener('click', titleClickHandler);
+}
